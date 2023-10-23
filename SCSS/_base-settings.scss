@@ -1,0 +1,35 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../fonts/NotoSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../fonts/NotoSans-Bold.ttf);
+    font-weight: 700;
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background-color: map-get($colors, white);
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    color: map-get($colors, black);
+}
+
+.main-container {
+    width: 114rem;
+    margin: 0 auto;
+    overflow: hidden;
+}

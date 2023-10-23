@@ -1,0 +1,32 @@
+.cards-slider {
+    padding: 10rem 0;
+
+    &__cards {
+        display: flex;
+        gap: 0 3rem;
+        position: relative;
+        left: 0;
+        margin-bottom: 4rem;
+        transition: all 1s ease;
+    }
+    &__btn-previous {
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-right: 3.2rem;
+        opacity: .3;
+        &:hover, &:active {
+            transform: scale(1.2);
+            transition: all ease .2s;
+        }
+    }
+    &__btn-next {
+        border: none;
+        background: none;
+        cursor: pointer;
+        &:hover, &:active {
+            transform: scale(1.2);
+            transition: all ease .2s;
+        }
+    }
+}

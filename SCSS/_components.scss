@@ -1,0 +1,119 @@
+.title {
+    color: map-get($colors, white);
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 6.8rem;
+    letter-spacing: .14rem;
+    position: relative;
+    z-index: 50;
+    &_blue {
+        color: map-get($colors, blue);
+        margin-bottom: 3.2rem;
+    }
+}
+
+.card {
+    display: inline-block;
+    border: .1rem solid map-get($colors, grey);
+    padding: 2.9rem;
+    position: relative;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    letter-spacing: .08rem;
+    &__picture {
+        width: 30rem;
+        height: 17rem;
+        background: map-get($colors, grey);
+        margin-bottom: 1.6rem;
+        &_pink {
+            background: map-get($colors, pink);
+        }
+        &_yellow {
+            background: map-get($colors, yellow);
+        }
+        &_green {
+            background: map-get($colors, green);
+        }
+        &_purple {
+            background: map-get($colors, purple);
+        }
+        &_blue {
+            background: map-get($colors, blue);
+        }
+    }
+    &__autor {
+        color: map-get($colors, blue);
+        margin-bottom: 1.2rem;
+        &_dark-blue {
+            color: map-get($colors, dark-blue);
+        }
+    }
+    &__title {
+        max-width: 30rem;
+        font-size: 2.2rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        line-height: 3rem;
+        letter-spacing: .12rem;
+    }
+    &__discription {
+        max-width: 30rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        letter-spacing: .08rem;
+        margin-bottom: 2rem;
+    }
+    &__category {
+        display: inline-block;
+        position: absolute;
+        top: 1.3rem;
+        left: 0;
+        background: map-get($colors, blue);
+        padding: .8rem 1.6rem;
+        color: map-get($colors, white);
+        line-height: normal;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        &_dark-blue {
+            background: map-get($colors, dark-blue);
+        }
+    }
+}
+
+.button {
+    display: inline-block;
+    background: map-get($colors, blue);
+    padding: 1rem 3.5rem;
+    color: map-get($colors, white);
+    text-decoration: none;
+    border: .2rem solid map-get($colors, blue);
+    font-size: 1.3rem;
+    line-height: 2rem;
+    letter-spacing: .08rem;
+    &_dark-blue {
+        background: map-get($colors, dark-blue);
+        border: .2rem solid map-get($colors, dark-blue);
+    }
+    &_empty {
+        background: none;
+    }
+}
+
+.location-card {
+    padding: 3rem;
+    background: map-get($colors, light-green);
+    &__header {
+        font-size: 2.6rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        line-height: 3.6rem;
+        letter-spacing: .12rem;
+    }
+    &__description {
+        width: 30rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+        letter-spacing: .08rem;
+    }
+}

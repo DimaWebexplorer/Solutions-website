@@ -1,0 +1,42 @@
+.partners {
+    padding: 10rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    background: map-get($colors, beige);
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8rem 3rem;
+        justify-content: center;
+        &-item {
+            width: 16.5rem;
+            height: 5.5rem;
+            mask: center;
+            background-color: map-get($colors, light-black);
+            &_google {
+                -webkit-mask-image: url(/icons/google.svg);
+                mask-image: url(/icons/google.svg);
+            }
+            &_samsung {
+                -webkit-mask-image: url(/icons/samsung.svg);
+                mask-image: url(/icons/samsung.svg);
+            }
+            &_nvidia {
+                -webkit-mask-image: url(/icons/nvidia.svg);
+                mask-image: url(/icons/nvidia.svg);
+            }
+            &_adobe {
+                -webkit-mask-image: url(/icons/adobe.svg);
+                mask-image: url(/icons/adobe.svg);
+            }
+            &_atandt {
+                -webkit-mask-image: url(/icons/at&t.svg);
+                mask-image: url(/icons/at&t.svg);
+            }
+            &_mail-chimp {
+                -webkit-mask-image: url(/icons/mailchimp.svg);
+                mask-image: url(/icons/mailchimp.svg);
+            }
+        }
+    }
+}
